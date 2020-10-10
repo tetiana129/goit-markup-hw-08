@@ -1,0 +1,37 @@
+.btn {
+    background-color: $accent-color;
+    color: $withe-color;
+    @include font(16px, 1.87, 700, 0.06em);
+    
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 32px;
+
+    &__subscription {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        /*width: 109px;
+        height: 30px;*/
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+       
+        /*padding-left: 29px;
+        margin-left: 12px; 
+        margin-top: 36px;  */                 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);            
+        display: flex;                       
+            
+        .icon-send {
+            position: absolute;
+            top: 50%;
+            right: 28px;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            fill: $withe-color;  
+        }
+    }
+}
+

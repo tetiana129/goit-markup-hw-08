@@ -1,0 +1,47 @@
+.hero {
+    text-align: center;
+    background-color: $bgc-dark-grey; 
+    @media screen and (max-width:1199px) {
+       padding-top: 118px; 
+       padding-bottom: 118px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 200px; 
+        padding-bottom: 200px;
+     }
+    
+    
+
+    &__container {
+        /*height: 600px;*/
+        margin-left: auto;
+        margin-right: auto;
+        background-image: 
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("../images/hero-opim.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;    
+    }
+    
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: $withe-color;
+        
+        font-weight: 900;
+        @media screen  and (max-width:1199px) {
+            font-size: 26px;
+            line-height: 1.61;
+        }
+        @media screen  and (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+
+        
+        letter-spacing: 0.06em;
+        text-transform: uppercase;                     
+    }
+}
+

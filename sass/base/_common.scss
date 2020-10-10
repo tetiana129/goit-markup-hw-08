@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    /*outline: 2px solid red;*/
+  }
+
+
+.page {
+    font-family: Roboto, sans-serif;
+    @include font(14px, 1.71);
+    color: $primary-text-color;
+    background-color: $withe-color;    
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+
+/*.item__margin:not(:last-child) {
+    margin-bottom: 30px;       
+}*/
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.social__container {            
+    /*margin: 15px 0px 0px 70px;*/
+
+    &__label {
+        color: $withe-color;
+        margin: 0;
+        margin-bottom: 20px;
+        @include font(14px, 1.14, 700);
+        text-transform: uppercase;        
+    }  
+}
