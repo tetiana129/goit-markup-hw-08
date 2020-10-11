@@ -1,15 +1,24 @@
 .logo {
     color: $title-text-color;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    @media screen and (max-width:767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;        
+    }
+
+    @media screen and (min-width:768px) {
+        // padding-top: 26px;
+        // padding-bottom: 26px;     
+    }
 
     &,
     &-footer,
     &-web {
         font-family: "Raleway", sans-serif;
-        /*@include font(26px, 1.2, 700);*/
-        @include font(24px, 1.71, 700);
-            
+        @include font(26px, 1.2, 700);
+
+        @media screen and (max-width:1199px) {
+            @include font(24px, 1.71, 700);
+        }            
     }
 
     &-web {
@@ -20,5 +29,4 @@
         display: inline-block;
         color: $withe-color;
     }
-
 }

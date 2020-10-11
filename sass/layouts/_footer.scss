@@ -1,17 +1,47 @@
 .footer {
     background-color: $bgc-dark-grey;
-    padding-top: 60px;
-    padding-bottom: 60px;
     text-align: center;
 
-    &__container:not(:last-child) {  
-        margin-bottom: 60px;          
-    }
-    
-    &__logo {
-        margin-bottom: 20px;        
+    .footer__section {
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
+    &-tablet__container {
+
+        @media screen  and (max-width:1199px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width:768px) {
+            margin-left: 60px;
+            margin-right: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: start;         
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 0;
+            margin-right: 0;
+            width: 507px;
+
+
+        }
+
+        .footer__logo {
+            margin-bottom: 20px;        
+        }
+    }
+
+    &__container:not(:last-child) { 
+        @media screen  and (max-width:767px) {
+            margin-bottom: 60px;
+        } 
+    }
+    
     &__address {
         color: $withe-color; 
     }
@@ -61,11 +91,20 @@
         }
           
         &__input {
-            /*width: 358px;*/
             width: 100%;
+            @media screen and (min-width:768px) {
+                width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (min-width:1200px) {
+                width: 358px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             margin: 0;
             padding: 15px 0px 15px 16px;
-            /*padding: 16px 0px 16px 16px;*/
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-sizing: border-box;
             background-color: $bgc-dark-grey;
