@@ -2,38 +2,23 @@
     background-color: $bgc-dark-grey;
     text-align: center;
 
-    .footer__section {
+    .footer__main {
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
         @media screen and (min-width:1200px) {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
-    &-tablet__container {
-
-        @media screen  and (max-width:1199px) {
-            margin-bottom: 60px;
-        }
-
-        @media screen and (min-width:768px) {
-            margin-left: 60px;
-            margin-right: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: start;         
-        }
-
-        @media screen and (min-width:1200px) {
-            margin-left: 0;
-            margin-right: 0;
-            width: 507px;
-
-
-        }
-
-        .footer__logo {
-            margin-bottom: 20px;        
-        }
+    .footer__logo {
+        margin-bottom: 20px;        
     }
 
     &__container:not(:last-child) { 
@@ -48,7 +33,6 @@
 
     &__address__item:not(:last-child) {  
         margin-bottom: 8px;          
-        /*margin-bottom: 9px;*/
     }
 
     &__address__item {
@@ -60,19 +44,47 @@
         .tel {            
             color: $second-text-color;  
         }      
-    }   
+    }
     
+    .footer-social__container {
+        @media screen and (min-width:768px) {
+            margin-left: 165px;
+            margin-top: 5px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-left: 0px;
+        }
+   
+    }
+    
+    .footer-email__container {
+        @media screen and (min-width:768px) {
+            margin-top: 60px;
+        }
+        @media screen and (max-width:1199px) {
+            margin-top: 60px;
+        }
+
+    }
+
     .email {            
         padding: 0;
         /*margin-top: 12px;
         margin-left: auto;*/
     
         &__form-field {
-            /*display: flex;*/
+            @media screen and (min-width:1200px) {
+                display: flex;
+                align-items: flex-end;
+            }
     
             .email__form-field-email {
                 display: flex;
                 flex-direction: column;
+
+                @media screen and (min-width:1200px) {
+                    margin-right: 12px;
+                }
     
                 & input::placeholder {
                     font-size: 16px;
@@ -88,6 +100,9 @@
             text-transform: uppercase;
             color: $withe-color;
             margin: 0px 0px 20px 0px;
+            @media screen and (min-width:1200px) {
+                text-align: left;
+            }
         }
           
         &__input {

@@ -281,8 +281,8 @@
 
     <footer class="footer">
         <section class="section">
-            <div class="footer-tablet__container">
-                <div class="container footer__container">
+            <div class="container footer__main">
+                <div class="footer__container">
                     <div class="footer__logo">
                         <a class="link logo-footer" href="./" >
                             <span class="logo-web">Web</span>
@@ -302,7 +302,7 @@
                     </ul>       
                 </div>
         
-                <div class="container footer__container footer-social__container">
+                <div class="footer__container footer-social__container">
                     <!--Присоединяйтесь-->
                     <p class="social__container__label">Присоединяйтесь</p>
                     <ul class="list social-icons">                    
@@ -337,34 +337,34 @@
                         </ul>
                                          
                 </div>    
+    
+                <div class="footer-email__container">
+                    <!--Подпишитесь на рассылку-->
+                    <form class="form">
+                       <div class="email__form-field">
+                            <div class="email__form-field-email">
+                                <label for="name" class="email__label">Подпишитесь на рассылку</label>
+                                 <input class="email__input"
+                                 type="text"
+                                 name="name"
+                                 id="name"
+                                 placeholder="E-mail"
+                                 />
+                            </div>
+                            <button  type="button" class="btn btn__subscription">
+                                <span>Подписаться</span> 
+                                <svg class="icon-send">
+                                    <use href="./images/symbol-defs.svg#send"></use>
+                                </svg>
+                            </button>
+                       </div>
+                    </form>
+        
+        
+                </div>    
             </div>
-    
-            <div class="footer-email__container">
-                <!--Подпишитесь на рассылку-->
-                <form class="form">
-                   <div class="email__form-field">
-                        <div class="email__form-field-email">
-                            <label for="name" class="email__label">Подпишитесь на рассылку</label>
-                             <input class="email__input"
-                             type="text"
-                             name="name"
-                             id="name"
-                             placeholder="E-mail"
-                             />
-                        </div>
-                        <button  type="button" class="btn btn__subscription">
-                            <span>Подписаться</span> 
-                            <svg class="icon-send">
-                                <use href="./images/symbol-defs.svg#send"></use>
-                            </svg>
-                        </button>
-                   </div>
-                </form>
-    
-    
-            </div> 
-    
-        </section>   
+        </section>
+
     </footer>
 
     <script src="./js/menu.js"></script>
