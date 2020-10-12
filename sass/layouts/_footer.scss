@@ -18,7 +18,10 @@
     }
 
     .footer__logo {
-        margin-bottom: 20px;        
+        margin-bottom: 20px;  
+        @media screen  and (min-width:1200px) {
+            text-align: left;
+        }
     }
 
     &__container:not(:last-child) { 
@@ -53,6 +56,12 @@
         }
         @media screen and (min-width:1200px) {
             margin-left: 0px;
+        }
+
+        .social__container__label {
+            @media screen and (min-width:1200px) {
+                text-align: left;
+            }
         }
    
     }

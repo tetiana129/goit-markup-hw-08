@@ -1075,6 +1075,12 @@ html {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .footer__logo {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer__container:not(:last-child) {
     margin-bottom: 60px;
@@ -1107,6 +1113,12 @@ html {
 @media screen and (min-width: 1200px) {
   .footer .footer-social__container {
     margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footer-social__container .social__container__label {
+    text-align: left;
   }
 }
 
