@@ -69,12 +69,11 @@ html {
 }
 
 .container {
-  /*width: 100%;*/
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /*width: 1200px;*/
   /*@include for-size(mobile) {
         width: 480px;        
     }
@@ -928,15 +927,10 @@ html {
   }
 }
 
-.team img {
-  /*display: block;
-        margin-bottom: 30px;*/
-}
-
-@media screen and (max-width: 767px) {
-  .team img {
-    width: 100%;
-  }
+.team__img {
+  display: block;
+  width: 100%;
+  background-size: cover;
 }
 
 .team__member-name {

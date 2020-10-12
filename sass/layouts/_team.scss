@@ -45,12 +45,10 @@
          }
     } 
     
-    img {
-        @media screen and (max-width:767px){
-            width: 100%;
-        }
-        /*display: block;
-        margin-bottom: 30px;*/
+    &__img {
+        display: block;
+        width: 100%;
+        background-size: cover;
     }
 
     &__member-name {
