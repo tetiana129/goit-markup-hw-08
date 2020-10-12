@@ -84,7 +84,9 @@
     &__input {
         margin: 0;
         padding: 14px 15px 14px 42px;
+        @media screen and (min-width:480px) {
         width: 370px;
+        }
         @media screen and (min-width:1200px) {
             width: 448px;
         }
@@ -140,7 +142,9 @@
     margin-bottom: 20px;
 
     & .comment {
-        width: 370px;
+        @media screen and (min-width:480px) {
+            width: 370px;
+        }
         @media screen and (min-width:1200px) {
             width: 448px;
         }
